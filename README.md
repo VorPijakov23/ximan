@@ -12,7 +12,7 @@ ximan - Пакетный менеджер для операционной сис
 ## Установка
 
 ```bash
-chmod +x setup.sh req.sh && ./req.sh && sudo ./setup.sh
+chmod +x setup.sh && sudo ./setup.sh
 ```
 
 ## Как использовать

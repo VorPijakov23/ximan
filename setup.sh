@@ -2,10 +2,8 @@
 
 set -e
 
-if [ "$EUID" -ne 0 ]; then
-  echo "setup.sh: Permission denied: use 'sudo'"
-  exit 1
-fi
+mkdir -p ~/.config/ximan
+touch ~/.config/ximan/core.ximan
 
 if ! command -v g++ &> /dev/null; then
     echo "setup.sh: g++ not found. Please, install gcc."
